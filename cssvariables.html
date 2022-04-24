@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Variables</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <style>
+      h1 {
+        background-color: var(--blue);
+      }
+      p {
+        color: var(--blue);
+        font-size: var(--font-size-25);
+      }
+      h2 {
+          --red:#ca0000;
+          --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          background-color: var(--red);
+          font-family: var(--font-family)
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is a heading 1 text</h1>
+    <h2>This is a heading 2 text</h2>
+    <p>This is a paragraph text</p>
+  </body>
+</html>

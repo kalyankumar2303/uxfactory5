@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Flexbox</title>
+    <style>
+      .flex-container {
+        display: flex;
+        /* height: 800px; */
+        /*  align-items: baseline; */
+        /*  flex-direction: column; */
+        flex-wrap: nowrap;
+        background-color: coral;
+        /*  justify-content: space-between; */
+       /*  align-content: flex-start; */
+      }
+
+      .flex-container > div {
+        background-color: cornsilk;
+        margin: 10px;
+        padding: 25px;
+        font-size: 25px;
+        width: 100px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div>1</div>
+      <div>2</div>
+      <div style="flex-shrink: 0">3</div>
+      <div>4</div>
+      <div>1</div>
+      <div>2</div>
+      <div>1</div>
+      <div>2</div>
+      <div>1</div>
+      <div>2</div>
+      <div>1</div>
+      <div>2</div>
+      <div>1</div>
+      <div>2</div>
+      <div>1</div>
+      <div>2</div>
+      <div>1</div>
+    </div>
+  </body>
+</html>

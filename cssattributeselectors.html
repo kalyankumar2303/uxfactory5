@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Attribute Selectors</title>
+    <style>
+        a[href] {
+           background-color: chocolate; 
+        }
+
+        a[target="_self"] {
+            background-color: brown;
+        }
+
+        h1[title~="heading"] {
+            color:cadetblue;
+        }
+    </style>
+  </head>
+  <body>
+      <a target="_blank">Visit Google</a>
+      <a href="#">Visit Microsoft</a>
+      <a target="_self">Visit UXFactory</a>
+      <a target="_self">Visit UXFactory</a>
+      <a target="_self">Visit UXFactory</a>
+      <h1 title="heading">This is a heading</h1>
+      <h1 title="two heading">This is another heading</h2>
+  </body>
+</html>

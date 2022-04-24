@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <form
+      action="/register/registration.aspx"
+      method="POST"
+      name="registrationform"
+      id="register"
+      class="registration"
+    >
+      <label>First Name:</label>
+      <input
+        type="text"
+        id="firstname"
+        name="fname"
+        placeholder="Please enter firstname"
+        required
+      />
+      <br />
+      <br />
+
+      <label>Last Name:</label>
+      <input type="text" id="lastname" name="lname" value="kumar" /> <br />
+      <br />
+
+      <label>Password:</label>
+      <input type="password" id="userpwd" name="userpwd" /> <br />
+      <br />
+
+      <label>Select your city:</label>
+      <select id="city" name="city" size="3" multiple>
+        <option value="">Please select city</option>
+        <option value="hyd">Hyderabad</option>
+        <option value="vij">Vijayawada</option>
+        <option value="viz">Vizag</option>
+        <option value="gtr">Guntur</option>
+        <option value="tpty">Tirupathi</option>
+        <option value="nlr">Nellore</option>
+        <option value="rjy">Rajahmundry</option>
+      </select>
+      <br />
+      <br />
+
+      <label>About yourself:</label>
+      <textarea name="about" placeholder="Describe yourself"></textarea><br />
+      <br />
+
+      <label>Choose Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label>
+
+      <input type="radio" id="trans" name="gender" value="transgender" />
+      <label for="trans">Transgender</label>
+      <br /><br /><br />
+
+      <label>Choose your car:</label>
+      <input type="radio" id="audi" name="car" value="audi" />
+      <label for="audi">Audi</label>
+
+      <input type="radio" id="benz" name="car" value="benz" />
+      <label for="benz">Benz</label>
+
+      <input type="radio" id="skoda" name="car" value="skoda" />
+      <label for="skoda">Skoda</label>
+      <br /><br />
+
+      <label>Choose your Education:</label>
+      <input type="checkbox" id="eduction1" name="education1" value="SSC" />
+      <label for="eduction1">SSC</label>
+
+      <input
+        type="checkbox"
+        id="education2"
+        name="education2"
+        value="Intermediate"
+      />
+      <label for="education2">Intermediate</label>
+
+      <input type="checkbox" id="education3" name="education3" value="Btech" />
+      <label for="education3">Btech</label>
+
+      <input type="checkbox" id="education4" name="education4" value="Mtech" />
+      <label for="education4">Mtech</label> <br /><br />
+
+      <label for="files">Upload Resume:</label>
+      <input type="file" id="files" name="resume" /> <br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required /> <br /><br />
+
+      <label for="website">Website URL:</label>
+      <input type="url" id="website" name="websiteurl" /><br /><br />
+
+      <label for="favcolor">Select your favorite color:</label>
+      <input type="color" id="favcolor" name="favcolor" /><br /><br />
+
+      <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday"><br /><br />
+
+      <label for="pincode">Pincode:</label>
+      <input type="number" id="pincode" name="pincode" min="1" max="100"><br /><br />
+
+      <br /><br /><br />
+      <input type="submit" value="Register" />
+      <input type="reset" value="Clear Form" />
+    </form>
+
+    
+  </body>
+</html>

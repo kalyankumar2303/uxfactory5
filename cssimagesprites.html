@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Image Sprites</title>
+    <style>
+       #navlist {
+         position: relative;
+       }
+
+       #navlist li {
+         position: absolute;
+         margin:0;
+         padding:0;
+         list-style-type: none;
+         display:inline-block;
+       }
+
+       #navlist li, #navlist a {
+         height: 44px;
+         display: block;
+       }
+
+       #home {
+         background: url("images/img_navsprites.gif");
+         width: 45px;
+       }
+
+       #prev {
+         background: url("images/img_navsprites.gif");
+         background-position: 86px 0px;
+         width: 41px;
+         left: 200px;
+       }
+
+       #next {
+         background: url("images/img_navsprites.gif");
+         background-position: 42px 0px;
+         width: 42px;
+         left: 400px;
+       }
+    </style>
+  </head>
+  <body>
+    <ul id="navlist">
+      <li id="home"><a href="http://www.google.com" target="_blank"></a></li>
+      <li id="prev"><a href="http://www.microsoft.com" target="_blank"></a></li>
+      <li id="next"><a href="http://www.uxfactory.in" target="_blank"></a></li>
+    </ul>
+  </body>
+</html>

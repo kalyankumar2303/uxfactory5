@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Z-index</title>
+        <style>
+           .conatiner {
+               position: relative;
+           }
+           .div1 {
+               position: relative;
+               border: 2px solid black;
+               height: 100px;
+               z-index: -1;
+               background-color: rgb(229, 156, 156);
+           }
+           .div2 {
+               position: absolute;
+               border: 2px solid green;
+               background-color: green;
+               height: 60px;
+               width: 40%;
+               z-index: -2;
+               top: 30px;
+               left: 50px;
+           }
+           .div3 {
+               position: absolute;
+               border: 2px solid red;
+               background-color: red;
+               height: 100px;
+               width: 80%;
+               z-index: 2;
+               top: 45px;
+           }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="div1">Div 1</div>
+            <div class="div2">Div 2</div>
+            <div class="div3">Div 3</div>
+        </div>
+    </body>
+</html>

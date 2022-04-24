@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Links</title>
+    <style>
+      /* Psuedo Classes */
+      /* normal, unvisited link */
+      #eenadulink:link {
+        color: red;
+        text-decoration: none;
+        background-color: yellow;
+      }
+
+      /* visited link */
+      #eenadulink:visited {
+        color: green;
+        text-decoration: none;
+        background-color: cornsilk;
+      }
+
+      /* hover link */
+      #eenadulink:hover {
+        color: yellow;
+        text-decoration: underline;
+        background-color: black;
+        cursor:pointer;
+      }
+
+      /* active link  */
+      #eenadulink:active {
+        color: blue;
+        text-decoration: underline;
+        background-color: coral;
+      }
+
+
+      a.linkbutton:link, a.linkbutton:visited{
+          background-color: indianred;
+          color: black;
+          padding: 15px 25px;
+          text-decoration: none;
+      }
+
+      a.linkbutton:hover, a.linkbutton:active {
+          text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Hello Everyone, please
+      <a id="eenadulink" href="http://www.eenadu.net" target="_blank">Visit Eenadu website.</a>
+    </p>
+    <br><br>
+    <a class="linkbutton" href="http://www.microsoft.com" target="_blank">Visit Microsoft</a>
+  </body>
+</html>

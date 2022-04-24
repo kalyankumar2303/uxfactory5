@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Tables</title>
+    <style>
+      /* table,
+      th,
+      td {
+        border: 1px solid #000000;
+        border-collapse: collapse;
+      }
+
+      th {
+          background-color: cadetblue;
+      } */
+
+      #students {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      #students td,
+      #students th {
+        border: 1px solid rgba(97, 12, 147, 0.427);
+        padding: 8px;
+      }
+
+      #students th {
+        background-color: aqua;
+        text-align: left;
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+
+      #students tr:nth-child(even) {
+        background-color: darkolivegreen;
+      }
+
+      #students tr:hover {
+        background-color: coral;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HTML Tables can arrange data in to rows and columns -->
+    <!-- tr : table row -->
+    <!-- th : table heading -->
+    <!-- td : table data -->
+    <table id="students">
+      <tr>
+        <th>Student Name</th>
+        <th>Batch</th>
+        <th>Education</th>
+        <!--  <th>City</th>
+        <th>College</th>
+        <th>Branch</th> -->
+        <th colspan="3">City, College & Branch</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td colspan="2">Praveen CBA2022</td>
+        <td>BTech</td>
+        <td>Vijayawada</td>
+        <td>NIIT</td>
+        <td>Nellore</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>Satish</td>
+        <td>CKA2021</td>
+        <td>MTech</td>
+        <td>Hyderabad</td>
+        <td>NIIT</td>
+        <td>Nellore</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>Praveen</td>
+        <td>CBA2022</td>
+        <td>BTech</td>
+        <td>Vijayawada</td>
+        <td>NIIT</td>
+        <td>Nellore</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>Satish</td>
+        <td>CKA2021</td>
+        <td>MTech</td>
+        <td>Hyderabad</td>
+        <td>NIIT</td>
+        <td>Nellore</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>Praveen</td>
+        <td>CBA2022</td>
+        <td>BTech</td>
+        <td>Vijayawada</td>
+        <td>NIIT</td>
+        <td>Nellore</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>Satish</td>
+        <td>CKA2021</td>
+        <td>MTech</td>
+        <td>Hyderabad</td>
+        <td>NIIT</td>
+        <td>Nellore</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>Satish</td>
+        <td>CKA2021</td>
+        <td>MTech</td>
+        <td>Hyderabad</td>
+        <td>NIIT</td>
+        <td>Nellore</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Satish</td>
+        <td>CKA2021</td>
+        <td>MTech</td>
+        <td>Hyderabad</td>
+        <td>NIIT</td>
+        <td>Nellore</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>CKA2021</td>
+        <td>MTech</td>
+        <td>Hyderabad</td>
+        <td>NIIT</td>
+        <td>Nellore</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>CKA2021</td>
+        <td>MTech</td>
+        <td>Hyderabad</td>
+        <td>NIIT</td>
+        <td>Nellore</td>
+        <td>23</td>
+      </tr>
+    </table>
+  </body>
+</html>

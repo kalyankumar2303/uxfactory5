@@ -1,0 +1,10 @@
+#news {
+  background-color: coral;
+  color: black;
+  padding: 15px;
+  border: 2px solid darkgreen;
+  width: 50%;
+  font-family: system-ui;
+  height: 150px;
+  overflow: scroll;
+}

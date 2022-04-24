@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Responsive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .column {
+        width: 25%;
+        float: left;
+      }
+
+      /* Media Queries */
+
+      /* Extra Small devices (phones, 600px and down) */
+      @media only screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+        }
+      }
+
+      /* Small devices (portrait tablets and large phones, 600px and above) */
+      @media only screen and (min-width: 600px) {
+        .column {
+          width: 50%;
+        }
+      }
+
+      /* Medium devices (landscape tablets, 768px and above) */
+      @media only screen and (min-width: 768px) {
+        .column {
+          width: 33%;
+        }
+      }
+
+      /* Large Devices (laptops, desktops, 992px and above) */
+      @media only screen and (min-width: 992px) {
+        .column {
+          width: 50%;
+        }
+      }
+
+      /* Extra Large Devices (large screen laptops and desktops, 1200px and above) */
+      @media only screen and (min-width: 1200px) {
+        .column {
+          width: 25%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="column" style="background-color: cadetblue">
+        <h2>Column1</h2>
+        <p>Dummy paragraph text</p>
+      </div>
+      <div class="column" style="background-color: coral">
+        <h2>Column2</h2>
+        <p>Dummy paragraph text</p>
+      </div>
+      <div class="column" style="background-color: cornflowerblue">
+        <h2>Column3</h2>
+        <p>Dummy paragraph text</p>
+      </div>
+      <div class="column" style="background-color: gray">
+        <h2>Column4</h2>
+        <p>Dummy paragraph text</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Combinators</title>
+    <style>
+      /* Descendant Selector (space) */
+      /* div p {
+          background-color: coral;
+      } */
+
+      /* Child Selector (>) */
+      /* div > p {
+          background-color: cornflowerblue;
+      }
+ */
+      /* Adjacent Sibling Selector (+) */
+      /* div + p {
+        background-color: darkolivegreen;
+      } */
+
+      /* General Sibling Selector (~) */
+      div ~ p {
+          background-color: darkmagenta;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Combinators</h1>
+    <div>
+      <p>Paragraph 1 in the div</p>
+      <p>Paragraph 2 in the div</p>
+      <p>Paragraph 3 in the div</p>
+      <article>
+        <p>Paragraph 4 in the div</p>
+      </article>
+      <p>Paragraph 5 in the div</p>
+    </div>
+    <p>Paragraph 6 out of the div</p>
+    <p>Paragraph 7 out of the div</p>
+  </body>
+</html>
